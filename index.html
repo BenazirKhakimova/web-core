@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 1</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-------------- header ------------->
+    <header class="header container">
+      <nav class="nav">
+        <img src="./assets/icons/burger.png" alt="burger" class="nav__item" />
+        <div class="divider hidden"></div>
+        <img src="./assets/icons/logo.png" alt="logo" class="nav__item" />
+
+        <div class="empty hidden"></div>
+
+        <img
+          src="./assets/icons/call.png"
+          alt="call"
+          class="nav__item hidden"
+        />
+        <img
+          src="./assets/icons/chat.png"
+          alt="chat"
+          class="nav__item hidden"
+        />
+        <img
+          src="./assets/icons/profile.png"
+          alt="profile"
+          class="nav__item hidden"
+        />
+
+        <div class="divider"></div>
+        <img src="./assets/icons/repair.png" alt="repair" class="nav__item" />
+        <img
+          src="./assets/icons/checkstatus.png"
+          alt="checkstatus"
+          class="nav__item"
+        />
+      </nav>
+    </header>
+    <!-------------- main ------------->
+    <main class="main">
+      <div class="services">
+        <div class="services__left__side">
+          <div class="services__highlight"></div>
+          <h1 class="services__title title">Услуги и сервисы</h1>
+        </div>
+
+        <div class="services__hidden">
+          <div>
+            <p>Оставить заявку</p>
+            <img src="./assets/icons/repair.png" alt="" />
+          </div>
+          <div>
+            <p>Статус ремонта</p>
+            <img src="./assets/icons/checkstatus.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <article class="slide">
+        <div class="slide__content container">
+          <button class="slide__button active">Ремонтируемые бренды</button>
+          <button class="slide__button">Ремонтируемые устройства</button>
+          <button class="slide__button">Цены на услуги</button>
+          <button class="slide__button">Адреса сервисных центров</button>
+          <button class="slide__button">Специальные цены</button>
+          <button class="slide__button">Отзывы</button>
+        </div>
+      </article>
+
+      <div class="description">
+        <div class="description__text__wrapper container">
+          <p class="description__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+
+          <p class="description__text hidden">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера <span>, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+            </span>
+          </p>
+
+          <div class="description__read-more">
+            <img
+              src="./assets/icons/readmore-icon.png"
+              alt="readmore-icon"
+              class="description__read-more__icon"
+            />
+            <p class="description__read-more__text">Читать далее</p>
+          </div>
+        </div>
+        <div class="description__img__wrapper">
+          <img
+            class="description__img"
+            src="./assets/img/main-img.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
