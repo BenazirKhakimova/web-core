@@ -14,6 +14,12 @@
   padding: 24px 16px 0 16px;
   background: #ffffff;
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+  transform: translateX(-400px);
+  transition: transform 1s ease;
+}
+.menu__open {
+  transform: translateX(0);
+  transition: transform 2s linear;
 }
 .menu-nav,
 .menu__nav__right-side {
@@ -66,6 +72,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 320px) and (max-height: 600px) {
+  .menu__contacts {
+    margin-bottom: 10px;
+  }
 }
 .menu__contacts__buttons__wprapper {
   display: flex;
