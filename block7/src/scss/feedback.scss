@@ -1,0 +1,59 @@
+@import '../scss/style.scss';
+@import '../scss/modal.scss';
+
+.desktop__btn {
+  display: none;
+  position: fixed;
+  top: 23px;
+  right: 345px;
+  z-index: 10;
+  transform: translateX(1000px);
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+.feedback {
+  &__modal {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 100%;
+
+    transform: translateX(1000px);
+    transition: transform 0.3s ease;
+  }
+  &_open {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  &__btn_close {
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__text {
+    font-family: $font-regular;
+    font-size: $font-size-small;
+    line-height: 16px;
+    color: $title-gray-color;
+    margin-bottom: 20px;
+  }
+}
+.text_color {
+  color: $pink-color;
+}
+.input__massage {
+  height: 118px;
+}
+.feedback__btn {
+  width: 136px;
+  &__wrapper {
+    display: flex;
+    justify-content: end;
+  }
+}
