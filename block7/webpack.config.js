@@ -48,7 +48,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
+<<<<<<< HEAD
         use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+=======
+        use: ['style-loader', 'css-loader']
+>>>>>>> b757b951dbc1629c0dfa24a7f9ad0fdd7bf046c9
       },
       // Подключаем шрифты из css
       {

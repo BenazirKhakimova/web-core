@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @import '~normalize.css';
 
+=======
+>>>>>>> b757b951dbc1629c0dfa24a7f9ad0fdd7bf046c9
 @font-face {
   font-family: 'TT Lakes Regular';
   src: url('../fonts/TTLakes-Regular.woff2'),
@@ -64,9 +67,16 @@ $line-height: 24px;
     position: absolute;
     left: 0;
     background: $blue-color;
+<<<<<<< HEAD
     width: 4px;
     height: 40px;
     border-radius: 0 100% 100% 0;
+=======
+    width: 8px;
+    height: 40px;
+    border-radius: 0 25% 25% 0;
+    margin-left: -4px;
+>>>>>>> b757b951dbc1629c0dfa24a7f9ad0fdd7bf046c9
   }
 }
 .sub__title {

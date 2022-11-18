@@ -1,6 +1,20 @@
 @import '../scss/style.scss';
 @import '../scss/modal.scss';
 
+<<<<<<< HEAD
+=======
+.desktop__btn {
+  display: none;
+  position: fixed;
+  top: 23px;
+  right: 345px;
+  z-index: 10;
+  transform: translateX(1000px);
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+>>>>>>> b757b951dbc1629c0dfa24a7f9ad0fdd7bf046c9
 .feedback {
   &__modal {
     position: fixed;
@@ -19,8 +33,12 @@
   &__btn_close {
     margin-bottom: 40px;
     @media screen and (min-width: 768px) {
+<<<<<<< HEAD
       position: absolute;
       left: -60px;
+=======
+      display: none;
+>>>>>>> b757b951dbc1629c0dfa24a7f9ad0fdd7bf046c9
     }
   }
   &__title {
