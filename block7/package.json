@@ -50,7 +50,10 @@
     }
   },
   "dependencies": {
+<<<<<<< HEAD
     "normalize.css": "^8.0.1",
+=======
+>>>>>>> b757b951dbc1629c0dfa24a7f9ad0fdd7bf046c9
     "swiper": "^8.4.4"
   }
 }
