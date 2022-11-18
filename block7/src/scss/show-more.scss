@@ -21,7 +21,10 @@
     background: none;
     cursor: pointer;
   }
+  svg {
+    margin-top: -5px;
+  }
 }
-.description__read-more{
-   display: flex;
+.description__read-more {
+  display: flex;
 }
