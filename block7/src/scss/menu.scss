@@ -1,0 +1,134 @@
+@import '../scss/style.scss';
+@import '../scss/modal.scss';
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  &__wrapper {
+     position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    transform: translateX(-1000px);
+    transition: transform 1s ease;
+
+    @media screen and (min-height: 630px) {
+      max-height: 890px;
+      height: 100%;
+    }
+    @media screen and (min-width: 1120px) {
+      width: 300px;
+      box-shadow: none;
+      transform: none;
+      transition: none;
+      z-index: 9;
+    }
+  }
+
+  &__open {
+    transform: translateX(0);
+    transition: transform 0.3s linear;
+  }
+
+  &__nav,
+  &__nav__right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__buttons {
+    padding: 0;
+  }
+
+  &__btn {
+    list-style: none;
+    font-family: $font-medium;
+    font-size: $font-size-small;
+    line-height: line-height;
+    margin-top: 20px;
+    color: $black-color;
+    transition: color 0.3s linear;
+    cursor: pointer;
+
+    &_active {
+      color: $title-gray-color;
+    }
+    &_active::before {
+      color: $title-gray-color;
+      background-color: $blue-color;
+    }
+  }
+
+  &__btn::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    width: 8px;
+    height: 32px;
+    border-radius: 0 25% 25% 0;
+    margin-left: -4px;
+    transition: background 0.3s linear;
+    vertical-align: middle;
+    margin-top: -2.5%;
+  }
+  &__btn:hover {
+    color: $pink-color;
+  }
+  &__btn:hover::before {
+    background: $light-pink-color;
+    opacity: 1;
+  }
+  @media screen and (min-width: 1120px) {
+    &__button_close {
+      display: none;
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    @media screen and (min-height: 630px) {
+      position: absolute;
+      bottom: 0;
+    }
+
+    &__buttons__wprapper {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    &__button {
+      margin-right: 16px;
+    }
+  }
+
+  &__lang,
+  .email {
+    font-family: $font-medium;
+    font-size: 16px;
+    line-height: line-height;
+    letter-spacing: -0.2px;
+    color: $black-color;
+    margin-top: 16px;
+  }
+  .phone {
+    font-family: $font-bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: $black-color;
+  }
+  &__lang__active {
+    color: $title-gray-color;
+  }
+  &__email,
+  &__phone,
+  &__lang {
+    margin-top: 16px;
+    cursor: pointer;
+  }
+}

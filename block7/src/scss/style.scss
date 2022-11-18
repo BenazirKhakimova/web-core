@@ -1,0 +1,97 @@
+@import '~normalize.css';
+
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('../fonts/TTLakes-Regular.woff2'),
+    url('../fonts/TTLakes-Regular.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('../fonts/TTLakes-Medium.woff2'), url('../fonts/TTLakes-Medium.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url('../fonts/TTLakes-Bold.woff2'), url('../fonts/TTLakes-Bold.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+$font-regular: 'TT Lakes Regular', sans-serif;
+$font-bold: 'TT Lakes Bold', sans-serif;
+$font-medium: 'TT Lakes Medium', sans-serif;
+$pink-color: #ff3e79;
+$light-pink-color: #ff3e7844;
+$light-gray-color: #f8f8f8;
+$title-gray-color: #7e7e82;
+$white-color: white;
+$black-color: black;
+$border-color: #b8ffec;
+$blue-color: #41f6d7;
+$font-size-small: 14px;
+$line-height: 24px;
+
+@media screen and (min-width: 1120px) {
+  body {
+    display: flex;
+  }
+  section {
+    position: absolute;
+    left: 320px;
+  }
+}
+.container {
+  max-width: 91%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 94%;
+  }
+}
+.title {
+  font-family: $font-bold;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  margin: 0;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    background: $blue-color;
+    width: 4px;
+    height: 40px;
+    border-radius: 0 100% 100% 0;
+  }
+}
+.sub__title {
+  font-family: $font-regular;
+  font-size: $font-size-small;
+  line-height: line-height;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: $title-gray-color;
+}
+.text {
+  font-family: $font-medium;
+  font-size: $font-size-small;
+  line-height: line-height;
+  letter-spacing: -0.2px;
+  color: $black-color;
+}
+.hidden {
+  display: none;
+}
+@media screen and (min-width: 650px) {
+  .hidden {
+    display: block;
+  }
+}
+.main {
+  background: $light-gray-color;
+}

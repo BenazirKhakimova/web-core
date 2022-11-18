@@ -1,0 +1,27 @@
+@import '../scss/style.scss';
+.read-more {
+  display: none;
+  justify-content: start;
+  align-items: flex-start;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  &__btn {
+    font-family: $font-medium;
+    font-size: $font-size-small;
+    line-height: line-height;
+    letter-spacing: -0.2px;
+    color: $black-color;
+    margin-bottom: 16px;
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+.description__read-more{
+   display: flex;
+}
