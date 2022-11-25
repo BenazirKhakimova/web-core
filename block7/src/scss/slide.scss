@@ -1,11 +1,9 @@
 @import '../../node_modules/swiper/swiper-bundle.min.css';
 @import '../scss/style.scss';
-body {
-  background-color: #f2f2f2;
-}
+
 .swiper__title__wrapper {
   background: linear-gradient(to right, #f2f2f2, $white-color);
-  padding: 0 5%;
+  padding: 0 16px;
   border-top: 1px solid $border-color;
 
   @media screen and (min-width: 768px) {
@@ -103,7 +101,7 @@ body {
 
 .swiper__content__wrapper {
   margin: 0 auto;
-  padding: 16px 0 16px 5%;
+  padding: 16px 0 16px 16px;
 
   @media screen and (min-width: 768px) {
     &_hidden {

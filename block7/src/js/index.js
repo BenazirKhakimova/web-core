@@ -21,15 +21,28 @@ let callModal = document.querySelector('.call-modal')
 let massageCloseBtn = document.querySelector('.massage_close')
 let callCloseBtn = document.querySelector('.call_close')
 
+const dontScrollBody = () => {
+  document.body.style.position = 'fixed'
+  // document.body.style.top = `-${window.scrollY}px`
+}
+const scrollBody = () => {
+  const scrollY = document.body.style.top
+  document.body.style.position = ''
+  document.body.style.top = ''
+  window.scrollTo(0, parseInt(scrollY || '0') * -1)
+}
+
 const handleMenu = () => {
   openMenu.addEventListener('click', function () {
     menu.classList.toggle('menu__open')
     menuBg.style.display = 'block'
+    dontScrollBody()
   })
 
   closeMenu.addEventListener('click', function () {
     menu.classList.toggle('menu__open')
     menuBg.style.display = 'none'
+    scrollBody()
   })
 }
 handleMenu()
@@ -40,8 +53,7 @@ const handleFeedbackMenu = () => {
       massageModal.classList.toggle('feedback_open')
       menuBg.style.display = 'block'
       menu.classList.remove('menu__open')
-
-      showDeskCloseButton()
+      dontScrollBody()
     })
   }
 
@@ -50,22 +62,19 @@ const handleFeedbackMenu = () => {
       callModal.classList.toggle('feedback_open')
       menuBg.style.display = 'block'
       menu.classList.remove('menu__open')
-
-      showDeskCloseButton()
+      dontScrollBody()
     })
   }
 
   massageCloseBtn.addEventListener('click', function () {
     massageModal.classList.remove('feedback_open')
     menuBg.style.display = 'none'
-
-    hideDeskCloseButton()
+    scrollBody()
   })
   callCloseBtn.addEventListener('click', function () {
     callModal.classList.remove('feedback_open')
     menuBg.style.display = 'none'
-
-    hideDeskCloseButton()
+    scrollBody()
   })
 }
 handleFeedbackMenu()
@@ -75,6 +84,5 @@ menuBg.addEventListener('click', function () {
   massageModal.classList.remove('feedback_open')
   callModal.classList.remove('feedback_open')
   menuBg.style.display = 'none'
-
-  hideDeskCloseButton()
+  scrollBody()
 })

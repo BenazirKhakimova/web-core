@@ -32,7 +32,9 @@ $border-color: #b8ffec;
 $blue-color: #41f6d7;
 $font-size-small: 14px;
 $line-height: 24px;
-
+body {
+  background-color: $light-gray-color;
+}
 @media screen and (min-width: 1120px) {
   body {
     display: flex;
@@ -43,13 +45,15 @@ $line-height: 24px;
   }
 }
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%;
+  @media screen and (min-width: 768px) {
+   padding: 0 24px;
+  }
+  @media screen and (min-width: 1120px) {
+    padding: 0 32px;
   }
 }
 .title {

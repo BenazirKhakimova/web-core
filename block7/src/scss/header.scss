@@ -3,12 +3,16 @@
   background-color: $white-color;
 }
 .nav {
+  position: fixed;
+  top: 0;
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 88px;
   margin: 0 auto;
-
+  background: white;
+  width: 100%;
   @media screen and (min-width: 1120px) {
     display: none;
   }
@@ -44,7 +48,7 @@
       width: 45%;
     }
     @media screen and (max-width: 649px) {
-      gap: 20px;
+      gap: 18px;
     }
   }
 }
@@ -62,7 +66,10 @@
 .services {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
+  margin-top: 112px !important;
+  @media screen and (min-width: 1120px) {
+    margin-top: 42px !important;
+  }
 
   &__left-side {
     display: flex;
