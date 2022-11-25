@@ -29,10 +29,10 @@
     }
 
     @media screen and (min-width: 768px) {
-       &:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-  } 
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
     }
   }
   &__inner {
@@ -68,7 +68,6 @@
     padding: 23px 0;
     border-bottom: 1px solid #eaeaea;
   }
- 
 }
 .price {
   &__titles__wrapper {
