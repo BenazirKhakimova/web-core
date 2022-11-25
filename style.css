@@ -322,6 +322,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -330,13 +333,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
@@ -382,11 +388,16 @@ template {
   background-color: white; }
 
 .nav {
+  position: fixed;
+  top: 0;
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 88px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: white;
+  width: 100%; }
   @media screen and (min-width: 1120px) {
     .nav {
       display: none; } }
@@ -414,7 +425,7 @@ template {
         width: 45%; } }
     @media screen and (max-width: 649px) {
       .nav__left-side {
-        gap: 20px; } }
+        gap: 18px; } }
 
 .divider {
   background: #eaeaea;
@@ -428,7 +439,10 @@ template {
 .services {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px; }
+  margin-top: 112px !important; }
+  @media screen and (min-width: 1120px) {
+    .services {
+      margin-top: 42px !important; } }
   .services__left-side {
     display: flex;
     align-items: center; }
@@ -781,6 +795,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -789,13 +806,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
@@ -1218,6 +1238,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -1226,13 +1249,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
@@ -1647,6 +1673,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -1655,13 +1684,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
@@ -2093,6 +2125,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -2101,13 +2136,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
@@ -2512,6 +2550,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -2520,13 +2561,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
@@ -2568,12 +2612,9 @@ template {
 .main {
   background: #f8f8f8; }
 
-body {
-  background-color: #f2f2f2; }
-
 .swiper__title__wrapper {
   background: linear-gradient(to right, #f2f2f2, white);
-  padding: 0 5%;
+  padding: 0 16px;
   border-top: 1px solid #b8ffec; }
   @media screen and (min-width: 768px) {
     .swiper__title__wrapper {
@@ -2655,7 +2696,7 @@ body {
 
 .swiper__content__wrapper {
   margin: 0 auto;
-  padding: 16px 0 16px 5%; }
+  padding: 16px 0 16px 16px; }
   @media screen and (min-width: 768px) {
     .swiper__content__wrapper_hidden {
       display: none; } }
@@ -2991,6 +3032,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -2999,13 +3043,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
@@ -3371,6 +3418,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -3379,13 +3429,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
@@ -3896,6 +3949,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -3904,13 +3960,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
@@ -3975,6 +4034,10 @@ template {
     border: none; }
     .prices__item__content:hover {
       border: none; }
+    @media screen and (min-width: 768px) {
+      .prices__item__content:last-child {
+        border-bottom: none;
+        padding-bottom: 0; } }
   .prices__item__inner {
     display: flex;
     align-items: flex-end;
@@ -4034,7 +4097,7 @@ hr {
   border: none; }
 
 .commercial-offer {
-  margin: 0 5%; }
+  margin: 0 16px; }
   @media screen and (min-width: 768px) {
     .commercial-offer {
       width: 420px;
@@ -4385,6 +4448,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -4393,13 +4459,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
@@ -4796,6 +4865,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -4804,13 +4876,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
@@ -5176,6 +5251,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #f8f8f8; }
+
 @media screen and (min-width: 1120px) {
   body {
     display: flex; }
@@ -5184,13 +5262,16 @@ template {
     left: 320px; } }
 
 .container {
-  max-width: 91%;
+  max-width: 1440px;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto; }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 94%; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 24px; } }
+  @media screen and (min-width: 1120px) {
+    .container {
+      padding: 0 32px; } }
 
 .title {
   font-family: "TT Lakes Bold", sans-serif;
