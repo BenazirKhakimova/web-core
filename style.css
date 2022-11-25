@@ -1303,7 +1303,8 @@ body {
 .slide__content {
   display: flex;
   overflow-x: scroll;
-  padding-top: 24px; }
+  padding-top: 24px;
+  margin-bottom: 10px; }
   @media screen and (min-width: 480px) {
     .slide__content {
       padding-top: 32px; } }
