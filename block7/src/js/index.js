@@ -23,7 +23,7 @@ let callCloseBtn = document.querySelector('.call_close')
 
 const dontScrollBody = () => {
   document.body.style.position = 'fixed'
-  // document.body.style.top = `-${window.scrollY}px`
+  document.body.style.top = `-${window.scrollY}px`
 }
 const scrollBody = () => {
   const scrollY = document.body.style.top
